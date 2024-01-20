@@ -62,3 +62,7 @@ print(B)
 print(suporte)
 print(confianca)
 print(lift)
+
+rules_data= pd.DataFrame({'A': A, 'B': B, 'suporte': suporte, 'confiança':confianca, 'lift':lift })
+
+print(rules_data.sort_values(by= 'lift', ascending=False))
