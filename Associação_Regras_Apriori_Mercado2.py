@@ -34,5 +34,5 @@ for resultado in resultados:
     lift.append(l)
 
 rules_df = pd.DataFrame({'A': A, 'B': B, 'suporte': suporte, 'confianca': confianca, 'lift': lift})
-rules_df.sort_values(by = 'confianca', ascending = False)
+rules_df=rules_df.sort_values(by = 'lift', ascending = False)
 print(rules_df)
