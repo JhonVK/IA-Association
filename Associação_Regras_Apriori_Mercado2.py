@@ -7,7 +7,7 @@ transacoes = []
 for i in range(base_mercado2.shape[0]):
   transacoes.append([str(base_mercado2.values[i, j]) for j in range(base_mercado2.shape[1])])
 
-
+t
 
 regras = apriori(transacoes, min_support = 0.003, min_confidence = 0.2, min_lift = 3)
 resultados = list(regras)
